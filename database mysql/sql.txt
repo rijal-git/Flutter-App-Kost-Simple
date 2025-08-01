@@ -1,0 +1,202 @@
+-- DATABASE: simko_db
+-- Sistem Informasi Manajemen Kost
+-- Dibuat dengan phpMyAdmin versi 5.2.1 | Server: MariaDB 10.4.32
+-- File ini mencakup struktur dan data awal seluruh tabel yang digunakan
+-- untuk sistem manajemen kost (penyewaan, pembayaran, penghuni, dll).
+
+-- ==============================================
+-- PERSIAPAN
+-- ==============================================
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+SET NAMES utf8mb4;
+
+-- ==============================================
+-- MEMBUAT DATABASE
+-- ==============================================
+
+CREATE DATABASE IF NOT EXISTS `simko_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `simko_db`;
+
+-- ==============================================
+-- 1. TABEL PENGHUNI
+-- ==============================================
+
+CREATE TABLE `penghuni` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(100),
+  `alamat` TEXT,
+  `email` VARCHAR(100),
+  `telepon` VARCHAR(20),
+  `username` VARCHAR(50) UNIQUE,
+  `password` VARCHAR(255),
+  `tanggal_masuk` DATE,
+  `aktif` TINYINT(1) DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 2. TABEL KOST
+-- ==============================================
+
+CREATE TABLE `kost` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `kamar` VARCHAR(10) UNIQUE NOT NULL,
+  `ukuran` VARCHAR(20) NOT NULL,
+  `fasilitas` TEXT NOT NULL,
+  `harga` INT UNSIGNED NOT NULL,
+  `status` ENUM('Kosong','Terisi') DEFAULT 'Kosong',
+  `gambar` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 3. TABEL SEWA
+-- ==============================================
+
+CREATE TABLE `data_sewa` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id_penghuni` INT UNSIGNED NOT NULL,
+  `id_kost` INT UNSIGNED NOT NULL,
+  `tanggal_mulai` DATE NOT NULL DEFAULT CURDATE(),
+  `status` ENUM('Aktif','Selesai') DEFAULT 'Aktif',
+  PRIMARY KEY (`id`),
+  KEY `idx_penghuni` (`id_penghuni`),
+  KEY `fk_sewa_kost` (`id_kost`),
+  CONSTRAINT `fk_sewa_penghuni` FOREIGN KEY (`id_penghuni`) REFERENCES `penghuni` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `fk_sewa_kost` FOREIGN KEY (`id_kost`) REFERENCES `kost` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 4. TABEL PEMBAYARAN
+-- ==============================================
+
+CREATE TABLE `pembayaran` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id_sewa` INT UNSIGNED NOT NULL,
+  `id_penghuni` INT UNSIGNED NOT NULL,
+  `metode` ENUM('Cash','Transfer') NOT NULL,
+  `nominal` INT UNSIGNED NOT NULL,
+  `catatan` TEXT,
+  `tanggal` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `status` ENUM('Menunggu Konfirmasi','Lunas','Ditolak') DEFAULT 'Menunggu Konfirmasi',
+  `bulan` VARCHAR(20),
+  `bukti_transfer` VARCHAR(255),
+  PRIMARY KEY (`id`),
+  KEY `id_sewa` (`id_sewa`),
+  KEY `id_penghuni` (`id_penghuni`),
+  CONSTRAINT `pembayaran_ibfk_1` FOREIGN KEY (`id_sewa`) REFERENCES `data_sewa` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `pembayaran_ibfk_2` FOREIGN KEY (`id_penghuni`) REFERENCES `penghuni` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 5. TABEL KOMPLAIN
+-- ==============================================
+
+CREATE TABLE `komplain` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `id_penghuni` INT UNSIGNED NOT NULL,
+  `kamar` VARCHAR(20) NOT NULL,
+  `tentang` VARCHAR(100) NOT NULL,
+  `pesan` TEXT NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `id_penghuni` (`id_penghuni`),
+  CONSTRAINT `komplain_ibfk_1` FOREIGN KEY (`id_penghuni`) REFERENCES `penghuni` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 6. TABEL NOTIFIKASI
+-- ==============================================
+
+CREATE TABLE `notifikasi` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id_penghuni` INT UNSIGNED NOT NULL,
+  `id_ref` INT DEFAULT NULL,
+  `judul` VARCHAR(100),
+  `pesan` TEXT,
+  `target` ENUM('admin','penghuni') DEFAULT 'admin',
+  `tanggal` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `is_read` TINYINT(1) DEFAULT 0,
+  `waktu` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `id_penghuni` (`id_penghuni`),
+  KEY `idx_id_ref` (`id_ref`),
+  CONSTRAINT `notifikasi_ibfk_1` FOREIGN KEY (`id_penghuni`) REFERENCES `penghuni` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 7. TABEL NOTIFIKASI PENGHUNI UMUM
+-- ==============================================
+
+CREATE TABLE `notifikasi_penghuni` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `id_penghuni` INT NOT NULL,
+  `judul` VARCHAR(255) NOT NULL,
+  `pesan` TEXT NOT NULL,
+  `target` VARCHAR(50) DEFAULT 'penghuni',
+  `tanggal` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 8. TABEL PERMINTAAN BERHENTI
+-- ==============================================
+
+CREATE TABLE `permintaan_berhenti` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id_penghuni` INT UNSIGNED NOT NULL,
+  `alasan` TEXT NOT NULL,
+  `status` ENUM('Menunggu','Dikonfirmasi','Ditolak') DEFAULT 'Menunggu',
+  `tanggal` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `id_penghuni` (`id_penghuni`),
+  CONSTRAINT `permintaan_berhenti_ibfk_1` FOREIGN KEY (`id_penghuni`) REFERENCES `penghuni` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 9. TABEL PERMINTAAN PINDAH
+-- ==============================================
+
+CREATE TABLE `permintaan_pindah` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id_penghuni` INT UNSIGNED NOT NULL,
+  `alasan` TEXT NOT NULL,
+  `status` ENUM('Menunggu','Dikonfirmasi','Ditolak') DEFAULT 'Menunggu',
+  `tanggal` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `id_penghuni` (`id_penghuni`),
+  CONSTRAINT `permintaan_pindah_ibfk_1` FOREIGN KEY (`id_penghuni`) REFERENCES `penghuni` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 10. TABEL INFORMASI UMUM
+-- ==============================================
+
+CREATE TABLE `informasi_umum` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `kategori` VARCHAR(50) NOT NULL UNIQUE,
+  `isi` TEXT DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- 11. TABEL PENGELUARAN KOST
+-- ==============================================
+
+CREATE TABLE `pengeluaran` (
+  `id_pengeluaran` INT NOT NULL AUTO_INCREMENT,
+  `bulan` VARCHAR(20) NOT NULL,
+  `keterangan` VARCHAR(255) NOT NULL,
+  `jumlah` INT NOT NULL,
+  `tanggal` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_pengeluaran`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ==============================================
+-- SELESAI
+-- ==============================================
+
+COMMIT;
