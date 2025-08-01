@@ -1,0 +1,206 @@
+START ADD KOST
+Array
+(
+    [kamar] => a88
+    [ukuran] => 5x5
+    [harga] => 99999
+    [status] => Kosong
+    [fasilitas] => vip
+)
+START ADD KOST
+Array
+(
+    [kamar] => a88
+    [ukuran] => 5x5
+    [harga] => 99999
+    [status] => Kosong
+    [fasilitas] => vip
+)
+--- 2025-07-11 22:35:13 ---
+POST:
+Array
+(
+    [kamar] => a88
+    [ukuran] => 5x5
+    [harga] => 99999
+    [status] => Kosong
+    [fasilitas] => vip
+)
+FILES:
+Array
+(
+    [gambar] => Array
+        (
+            [name] => 41053173-bb03-45e5-a1f0-9a0124d021c7
+            [full_path] => 41053173-bb03-45e5-a1f0-9a0124d021c7
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\php4B03.tmp
+            [error] => 0
+            [size] => 719598
+        )
+
+)
+Nama file: 41053173-bb03-45e5-a1f0-9a0124d021c7
+Ekstensi: 
+--- 2025-07-11 22:45:53 ---
+POST:
+Array
+(
+    [kamar] => qwq
+    [ukuran] => 4x2
+    [harga] => 121313
+    [status] => Kosong
+    [fasilitas] => sdasd
+)
+FILES:
+Array
+(
+    [gambar] => Array
+        (
+            [name] => 6ef55608-b3c4-49f7-b28d-257379e2a464.
+            [full_path] => 6ef55608-b3c4-49f7-b28d-257379e2a464.
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\phpDFB.tmp
+            [error] => 0
+            [size] => 175353
+        )
+
+)
+Nama file: 6ef55608-b3c4-49f7-b28d-257379e2a464.
+Ekstensi: 
+--- 2025-07-11 22:46:08 ---
+POST:
+Array
+(
+    [kamar] => qwq
+    [ukuran] => 4x2
+    [harga] => 121313
+    [status] => Kosong
+    [fasilitas] => sdasd
+)
+FILES:
+Array
+(
+    [gambar] => Array
+        (
+            [name] => 6ef55608-b3c4-49f7-b28d-257379e2a464.
+            [full_path] => 6ef55608-b3c4-49f7-b28d-257379e2a464.
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\php4BD0.tmp
+            [error] => 0
+            [size] => 175353
+        )
+
+)
+Nama file: 6ef55608-b3c4-49f7-b28d-257379e2a464.
+Ekstensi: 
+--- 2025-07-11 22:53:24 ---
+POST:
+Array
+(
+    [kamar] => 121
+    [ukuran] => 4x4
+    [harga] => 144242
+    [status] => Kosong
+    [fasilitas] => assa
+)
+FILES:
+Array
+(
+    [gambar] => Array
+        (
+            [name] => 3cc53f00-f85a-4d65-8f36-9055c7a4e4df.jpe
+            [full_path] => 3cc53f00-f85a-4d65-8f36-9055c7a4e4df.jpe
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\phpF293.tmp
+            [error] => 0
+            [size] => 175353
+        )
+
+)
+Nama file: 3cc53f00-f85a-4d65-8f36-9055c7a4e4df.jpe
+Ekstensi: jpe
+--- 2025-07-11 22:53:30 ---
+POST:
+Array
+(
+    [kamar] => 121
+    [ukuran] => 4x4
+    [harga] => 144242
+    [status] => Kosong
+    [fasilitas] => assa
+)
+FILES:
+Array
+(
+    [gambar] => Array
+        (
+            [name] => 3cc53f00-f85a-4d65-8f36-9055c7a4e4df.jpe
+            [full_path] => 3cc53f00-f85a-4d65-8f36-9055c7a4e4df.jpe
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\php9A6.tmp
+            [error] => 0
+            [size] => 175353
+        )
+
+)
+Nama file: 3cc53f00-f85a-4d65-8f36-9055c7a4e4df.jpe
+Ekstensi: jpe
+--- 2025-07-11 22:53:41 ---
+POST:
+Array
+(
+    [kamar] => 121
+    [ukuran] => 4x4
+    [harga] => 144242
+    [status] => Kosong
+    [fasilitas] => assa
+)
+FILES:
+Array
+(
+    [gambar] => Array
+        (
+            [name] => faaa04dc-cb24-42ef-ab51-38aaaa074de4.png
+            [full_path] => faaa04dc-cb24-42ef-ab51-38aaaa074de4.png
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\php357A.tmp
+            [error] => 0
+            [size] => 30021
+        )
+
+)
+Nama file: faaa04dc-cb24-42ef-ab51-38aaaa074de4.png
+Ekstensi: png
+GAMBAR BERHASIL DIPINDAH: kost_images/kost_68713385e24975.50126782.png
+✅ DATA KOST BERHASIL DITAMBAHKAN
+
+--- 2025-07-15 16:45:40 ---
+POST:
+Array
+(
+    [kamar] => a8
+    [ukuran] => 6x7
+    [harga] => 5000
+    [status] => Kosong
+    [fasilitas] => ac 
+)
+FILES:
+Array
+(
+    [gambar] => Array
+        (
+            [name] => 139b6dcd-74aa-49f8-b061-c537037eda19.jpe
+            [full_path] => 139b6dcd-74aa-49f8-b061-c537037eda19.jpe
+            [type] => application/octet-stream
+            [tmp_name] => C:\xampp\tmp\phpE200.tmp
+            [error] => 0
+            [size] => 719598
+        )
+
+)
+Nama file: 139b6dcd-74aa-49f8-b061-c537037eda19.jpe
+Ekstensi: jpe
+GAMBAR BERHASIL DIPINDAH: kost_images/kost_687623445c4528.93639926.jpe
+✅ DATA KOST BERHASIL DITAMBAHKAN
+

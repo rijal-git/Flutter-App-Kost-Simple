@@ -1,0 +1,240 @@
+
+
+--- 2025-07-11 23:33:50 ---
+Array
+(
+    [id] => 72
+    [id_penghuni] => 94
+    [id_kost] => 1
+    [tanggal_mulai] => 2025-07-11
+    [status] => Aktif
+    [kamar] => A1
+    [ukuran] => 3x3
+    [fasilitas] => AC, WiFi
+    [harga] => 750000
+    [gambar] => kost_68713a8079c746.33545083.png
+)
+
+
+--- 2025-07-11 23:34:07 ---
+Array
+(
+    [id] => 60
+    [id_penghuni] => 80
+    [id_kost] => 4
+    [tanggal_mulai] => 2025-07-07
+    [status] => Aktif
+    [kamar] => A4
+    [ukuran] => 2x5
+    [fasilitas] => kulkas
+    [harga] => 120000
+    [gambar] => kost_68713a9c967223.49359750.png
+)
+
+
+--- 2025-07-12 15:29:27 ---
+Array
+(
+    [id] => 73
+    [id_penghuni] => 95
+    [id_kost] => 8
+    [tanggal_mulai] => 2025-07-12
+    [status] => Aktif
+    [kamar] => A7
+    [ukuran] => 4x4
+    [fasilitas] => VIP
+    [harga] => 2500000
+    [gambar] => kost_68713adead2541.30468783.png
+)
+
+
+--- 2025-07-12 16:11:37 ---
+Array
+(
+    [id] => 73
+    [id_penghuni] => 95
+    [id_kost] => 8
+    [tanggal_mulai] => 2025-07-12
+    [status] => Aktif
+    [kamar] => A7
+    [ukuran] => 4x4
+    [fasilitas] => VIP
+    [harga] => 2500000
+    [gambar] => kost_68713adead2541.30468783.png
+)
+
+
+--- 2025-07-12 16:34:11 ---
+Array
+(
+    [id] => 73
+    [id_penghuni] => 95
+    [id_kost] => 8
+    [tanggal_mulai] => 2025-07-12
+    [status] => Aktif
+    [kamar] => A7
+    [ukuran] => 4x4
+    [fasilitas] => VIP
+    [harga] => 2500000
+    [gambar] => kost_68713adead2541.30468783.png
+)
+
+
+--- 2025-07-15 15:55:14 ---
+Array
+(
+    [id] => 72
+    [id_penghuni] => 94
+    [id_kost] => 1
+    [tanggal_mulai] => 2025-07-11
+    [status] => Aktif
+    [kamar] => A1
+    [ukuran] => 3x3
+    [fasilitas] => AC, WiFi
+    [harga] => 750000
+    [gambar] => kost_68713a8079c746.33545083.png
+)
+
+
+--- 2025-07-15 15:56:20 ---
+Array
+(
+    [id] => 72
+    [id_penghuni] => 94
+    [id_kost] => 1
+    [tanggal_mulai] => 2025-07-11
+    [status] => Aktif
+    [kamar] => A1
+    [ukuran] => 3x3
+    [fasilitas] => AC, WiFi
+    [harga] => 750000
+    [gambar] => kost_68713a8079c746.33545083.png
+)
+
+
+--- 2025-07-15 16:43:49 ---
+Array
+(
+    [id] => 74
+    [id_penghuni] => 96
+    [id_kost] => 3
+    [tanggal_mulai] => 2025-07-15
+    [status] => Aktif
+    [kamar] => A3
+    [ukuran] => 2x3
+    [fasilitas] => ac
+    [harga] => 130000
+    [gambar] => kost_68713a937cd4c7.81793621.png
+)
+
+
+--- 2025-07-15 16:43:59 ---
+Array
+(
+    [id] => 74
+    [id_penghuni] => 96
+    [id_kost] => 3
+    [tanggal_mulai] => 2025-07-15
+    [status] => Aktif
+    [kamar] => A3
+    [ukuran] => 2x3
+    [fasilitas] => ac
+    [harga] => 130000
+    [gambar] => kost_68713a937cd4c7.81793621.png
+)
+
+
+--- 2025-07-15 16:44:15 ---
+Array
+(
+    [id] => 74
+    [id_penghuni] => 96
+    [id_kost] => 3
+    [tanggal_mulai] => 2025-07-15
+    [status] => Aktif
+    [kamar] => A3
+    [ukuran] => 2x3
+    [fasilitas] => ac
+    [harga] => 130000
+    [gambar] => kost_68713a937cd4c7.81793621.png
+)
+
+
+--- 2025-07-30 09:26:44 ---
+Array
+(
+    [id] => 72
+    [id_penghuni] => 94
+    [id_kost] => 1
+    [tanggal_mulai] => 2025-07-11
+    [status] => Aktif
+    [kamar] => A1
+    [ukuran] => 3x3
+    [fasilitas] => AC, WiFi
+    [harga] => 750000
+    [gambar] => kost_68713a8079c746.33545083.png
+)
+
+
+--- 2025-07-30 09:50:38 ---
+Array
+(
+    [id] => 76
+    [id_penghuni] => 97
+    [id_kost] => 2
+    [tanggal_mulai] => 2025-07-30
+    [status] => Aktif
+    [kamar] => A2
+    [ukuran] => 3x4
+    [fasilitas] => Kipas, WiFi
+    [harga] => 650000
+    [gambar] => kost_68713a8c2847f6.79215992.png
+)
+
+
+--- 2025-07-30 09:51:13 ---
+Array
+(
+    [id] => 76
+    [id_penghuni] => 97
+    [id_kost] => 2
+    [tanggal_mulai] => 2025-07-30
+    [status] => Aktif
+    [kamar] => A2
+    [ukuran] => 3x4
+    [fasilitas] => Kipas, WiFi
+    [harga] => 650000
+    [gambar] => kost_68713a8c2847f6.79215992.png
+)
+
+
+--- 2025-07-30 10:14:10 ---
+Array
+(
+    [id] => 72
+    [id_penghuni] => 94
+    [id_kost] => 1
+    [tanggal_mulai] => 2025-07-11
+    [status] => Aktif
+    [kamar] => A1
+    [ukuran] => 3x3
+    [fasilitas] => AC, WiFi
+    [harga] => 750000
+    [gambar] => kost_6889867fc4d8c5.95972450.png
+)
+
+
+--- 2025-07-30 11:31:30 ---
+Array
+(
+    [id] => 77
+    [id_penghuni] => 98
+    [id_kost] => 9
+    [tanggal_mulai] => 2025-07-30
+    [status] => Aktif
+    [kamar] => a8
+    [ukuran] => 6x7
+    [fasilitas] => ac 
+    [harga] => 5000
+    [gambar] => kost_687623445c4528.93639926.jpe
+)

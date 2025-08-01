@@ -1,0 +1,12 @@
+{"id_penghuni":"1","kamar":"A1","tentang":"sdddss","pesan":"dsdsdsd"}
+[]
+[]
+{"id_penghuni":"80","kamar":"A2","tentang":"qqwq","pesan":"qwqwqw"}
+{"id_penghuni":"82","kamar":"a3","tentang":"gerah","pesan":"ac gak ada"}
+[]
+[]
+[]
+{"id_penghuni":"83","kamar":"A1","tentang":"bau sampah","pesan":"bau sampah dari pembuangan kost lain"}
+{"id_penghuni":"94","kamar":"A2","tentang":"gak betah","pesan":"gak betah"}
+{"id_penghuni":"97","kamar":"A1","tentang":"rembes","pesan":"rembes dinding"}
+{"id_penghuni":"98","kamar":"A1","tentang":"lampu","pesan":"lampu mati"}

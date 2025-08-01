@@ -1,0 +1,250 @@
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+Gambar baru: kost_687134587ba0e0.29126655.png
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => 17
+    [ukuran] => 4x4
+    [harga] => 12113
+    [status] => Kosong
+    [fasilitas] => asa
+)
+START EDIT
+Array
+(
+    [id] => 1
+    [kamar] => A1
+    [ukuran] => 3x3
+    [harga] => 750000
+    [status] => Terisi
+    [fasilitas] => AC, WiFi
+)
+Gambar baru: kost_68713a8079c746.33545083.png
+START EDIT
+Array
+(
+    [id] => 2
+    [kamar] => A2
+    [ukuran] => 3x4
+    [harga] => 650000
+    [status] => Terisi
+    [fasilitas] => Kipas, WiFi
+)
+Gambar baru: kost_68713a8c2847f6.79215992.png
+START EDIT
+Array
+(
+    [id] => 3
+    [kamar] => A3
+    [ukuran] => 2x3
+    [harga] => 130000
+    [status] => Terisi
+    [fasilitas] => ac
+)
+Gambar baru: kost_68713a937cd4c7.81793621.png
+START EDIT
+Array
+(
+    [id] => 4
+    [kamar] => A4
+    [ukuran] => 2x5
+    [harga] => 120000
+    [status] => Terisi
+    [fasilitas] => kulkas
+)
+Gambar baru: kost_68713a9c967223.49359750.png
+START EDIT
+Array
+(
+    [id] => 6
+    [kamar] => A5
+    [ukuran] => 4x6
+    [harga] => 1200000
+    [status] => Kosong
+    [fasilitas] => ac
+)
+Gambar baru: kost_68713aa944b0e3.41514134.png
+START EDIT
+Array
+(
+    [id] => 7
+    [kamar] => A6
+    [ukuran] => 4x4
+    [harga] => 950000
+    [status] => Kosong
+    [fasilitas] => VVIP
+)
+Gambar baru: kost_68713ac8a8fc81.27050436.png
+START EDIT
+Array
+(
+    [id] => 8
+    [kamar] => A7
+    [ukuran] => 4x4
+    [harga] => 2500000
+    [status] => Kosong
+    [fasilitas] => VIP
+)
+Gambar baru: kost_68713adead2541.30468783.png
+START EDIT
+Array
+(
+    [id] => 1
+    [kamar] => A1
+    [ukuran] => 3x3
+    [harga] => 750000
+    [status] => Terisi
+    [fasilitas] => AC, WiFi
+)
+Gambar baru: kost_68898320ec68d5.61944222.png
+START EDIT
+Array
+(
+    [id] => 1
+    [kamar] => A1
+    [ukuran] => 3x3
+    [harga] => 750000
+    [status] => Terisi
+    [fasilitas] => AC, WiFi
+)
+Gambar baru: kost_6889867fc4d8c5.95972450.png

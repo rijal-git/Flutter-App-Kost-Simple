@@ -1,0 +1,11 @@
+Array
+(
+    [id_penghuni] => 98
+    [kamar] => -
+    [metode] => Cash
+    [nominal] => 5000
+    [catatan] => Pembayaran bulan 2025-08
+    [bulan] => 2025-08
+    [bulan_ym] => 2025-07
+    [status] => Menunggu Konfirmasi
+)

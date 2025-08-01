@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Upload Gambar ke test.php</h2>
+  <form action="http://192.168.182.125/simko_api/test.php" method="post" enctype="multipart/form-data">
+    <label for="gambar">Pilih gambar:</label><br>
+    <input type="file" name="gambar" id="gambar" required accept="image/*" placeholder="Pilih file gambar"><br><br>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
