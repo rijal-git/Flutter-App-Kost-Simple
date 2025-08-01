@@ -9,13 +9,12 @@ Database ini berfungsi sebagai _back-end_ penyimpanan data utama untuk aplikasi 
 ## 📂 Struktur Proyek
 
 ```
-
-Porto Aplikasi/
-├── PHP/
-│   └── project\_php/
-│       ├── simko\_db.sql
-│       ├── (kode aplikasi)
-│       └── README.md
+D:Porto Aplikasi/
+├── Flutter/
+│   └── aplikasi Kost/
+│       ├── database mysql (kode sql)
+│       ├── flutter_application_simko (kode Flutter)
+│       └── API (kode PHP)
 
 ````
 
